@@ -177,7 +177,7 @@
     </div>
 
     <div class="pay">
-          <p class="time">优惠剩余时间：4分19秒</p>
+          <p class="time" id="timer">优惠剩余时间：4分19秒</p>
           <a href="" class="wx"><img src="./images/weixin.png" alt=""></a> 
           <a href="" class="ali"><img src="./images/zhifubao.png" alt=""></a>
           <div  onclick="close()" id="cancel" style="height: 3rem;line-height: 3rem;display: block;width: 97%;font-size: 1rem;letter-spacing: 2px;margin:3px auto;text-align: center;background: #ccc;border-radius:30px;color:#fff;">返回</div>
@@ -239,8 +239,8 @@
 <div style="min-height: 20rem;">
     <ul class="member-menu">
         <li>
-            <div>
-                <a href="/">
+            <div id="help">
+                <a href="javascript:void(0)">
                         <span><i class="fa fa-handshake-o"></i><span class="text">用户帮助</span></span>
                         <span class="icon"><i class="fa  fa-angle-right"></i></span>
                 </a>
@@ -255,16 +255,16 @@
             </div>
         </li>
         <li>
-                <div>
-                       <a href="">
+                <div id="contact">
+                        <a href="javascipt:void(0)">
                             <span><i class="fa fa-envelope-o"></i><span class="text">联系客服</span></span>
                             <span class="icon"><i class="fa fa-angle-right"></i></span>
                        </a>
                 </div>
         </li>
         <li>
-                <div>
-                      <a href="">
+                <div id="contract">
+                        <a href="javascipt:void(0)">
                             <span><i class="fa fa-list-alt"></i><span class="text">用户协议</span></span>
                             <span class="icon"><i class="fa fa-angle-right"></i></span>
                       </a>
@@ -298,7 +298,21 @@
 
 
 <script>
+       $('#help').click(function(){
+            layer.tips('敬请期待', '#help',{tips: [3, '#c00']});
+       });
+       $('#contract').click(function(){
+            layer.tips('敬请期待', '#contract',{tips: [3, '#c00']});
+       });
+       $('#contact').click(function(){
+            layer.tips('敬请期待', '#contact',{tips: [3, '#c00']});
+       });
+
+       layer.tips('点我购买会员', '#buy',{tips: [3, '#007bff']});
+
        $('#buy').click(function(){
+        if (lock) timer = setInterval("CountDown()", 1000);
+
         layer.open({
             type: 1,
             title : false,
@@ -315,6 +329,26 @@
       $("body").on("click", "#cancel",function(){
             layer.closeAll();
       });
+
+           
+      var maxtime = 300; //一个小时，按秒计算，自己调整!  
+      var lock = true;
+      
+      function CountDown() {
+                if (maxtime >= 0) {
+                    minutes = Math.floor(maxtime / 60);
+                    seconds = Math.floor(maxtime % 60);
+                    msg = "优惠剩余时间："+ minutes + "分" + seconds + "秒";
+                    document.all["timer"].innerHTML = msg;
+                    --maxtime;
+                    lock = false;
+                } else {
+                    lock = true;
+                    clearInterval(timer);
+                }
+      }
+                   
+    
       
     </script>
 
