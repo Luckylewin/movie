@@ -57,7 +57,7 @@ body .fn-hide{display:none}
 .all_tab{box-shadow:0 2px 2px 0 rgba(0,0,0,0.05);background:#fff; padding:0.333rem 0.333rem 0 0.333rem}
 .all_tab_new{box-shadow:0 2px 2px 0 rgba(0,0,0,0.05);background:#fff; padding:0.625rem 0.625rem 0 0.625rem}
 /*background-color:#3097fd;*/
-.header {background-color:#007bff;height: 3.33333rem;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;z-index: 600;position: fixed;top: 0;left: 0;width: 100%;}
+.header {background-color:#007bff;height: 3.3rem;line-height: 3.3rem;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;z-index: 600;position: fixed;top: 0;left: 0;width: 100%;}
 .moreArrow { font-size: 0; line-height: 0; border: solid #5aace8; vertical-align: top; -moz-transform: rotate(45deg); -webkit-transform: rotate(45deg); -o-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
 .header .logo { display: block; background: url("../images/headerLogo.png") center center no-repeat; background-size: 7rem 3.33333rem; width: 7rem; height: 3.33333rem; overflow: hidden; }
 .header .aChannel, .header .aGoBack { display: block; height: 3.33333rem; padding: 0 0.83333rem; overflow: hidden; }
@@ -875,6 +875,17 @@ display: inline-block;border-style: solid;overflow: hidden;vertical-align: middl
 }
 
 /*菜单栏*/
+
+
+.nav ul li span {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 22px;
+}
+
+
 .nav {
     /*background: #343a40!important;*/
     background: #007bff!important;
