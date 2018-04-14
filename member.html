@@ -172,6 +172,7 @@
           <p class="time">优惠剩余时间：4分19秒</p>
           <a href="" class="wx"><img src="./images/weixin.png" alt=""></a> 
           <a href="" class="ali"><img src="./images/zhifubao.png" alt=""></a>
+          <a href="" id="cancel" style="height: 3rem;line-height: 3rem;display: block;width: 97%;font-size: 1rem;letter-spacing: 2px;margin:3px auto;text-align: center;background: #ccc;border-radius:30px;color:#fff;">返回</a>
           <div class="tips">
                 <p>注:选择微信跳转支付模式，需要等待30秒</p> 
                 <p>左右才可到达支付页面,期间请勿操作手机</p>
@@ -303,8 +304,11 @@
     return false;
        });
 
-         $(document).click(function(){
-                    layer.close();
-                });
+    $('#cancel').click(function(){
+        layer.close();
+        return false;
+    });
+       
+      
     </script>
 
