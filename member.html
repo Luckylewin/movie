@@ -19,6 +19,7 @@
 <script type="text/javascript" src="./js/jquery-lazyload.js"></script>
 <script type="text/javascript" src="./js/jquery.base.js"></script>
 <script type="text/javascript" src="./js/home.js"></script>
+<script type="text/javascript" src="./js/layer/layer.js"></script>
 <script src="./js/pc.js"></script>
 <script>
         window.onload=function(){  
@@ -32,8 +33,7 @@
                 };  
     </script>
 </head>
-<body>
-
+<body style="position: relative">
 
 <header class="header clearfix" >
         <a href="/" target="_self" style="position: absolute;left: 1em;font-size:1.1rem;color:#fff;"><i class="fa fa-chevron-left" ></i></a>
@@ -46,8 +46,144 @@
 <!-- 搜索框 -->
 </header>
 
+<!-- 
+<div style="position: absolute;left: 0;top:0px;background:black;width: 100%;height:100%; opacity: 0.5;z-index: 10001">
+       <div style="position: absolute;left: 0;top:0px;background: #fff;width: 80%;height:80%; z-index: 10002">
+
+       </div>
+</div> -->
+<style>
+        .layui-layer-page{
+            border-radius: 30px;
+            overflow: hidden;
+            background: #f4f4f4;
+        }
+
+        #purchase .word
+        {
+            background: #f5f5f5;
+            color:#ff6100;
+            font-size: 1rem;
+            height: 35px;
+            line-height: 35px;
+            width: 100%;
+            text-align: center;
+            margin-top: -6px;
+        }
+        #purchase .word span {
+            font-weight: 560;
+        }
+        .orange {
+            color:#ff6100;
+            font-size: 1rem;
+            font-weight: 650; 
+        }
+        #purchase .type ul {
+            width: 80%;
+            margin:5px auto;
+        }
+       
+        #purchase .type ul li {
+            width: 100%;
+            height: 1.6rem;
+            line-height: 1.6rem;
+            display: block;
+        }
+        #purchase .type ul li span:first-child {
+            margin-right: 30px;
+        }
+        .p-type{
+            text-indent: 20px;
+        }
+        .p-type span:first-child {
+            color:gray;
+        }
+        .type{
+            background: #fff;
+            padding: 10px;
+        }
+        .pay {
+            background: #f4f4f4;
+            width: 100%;
+
+        }
+        .wx ,.ali{
+            display: block; 
+        }
+        .wx img ,.ali img{
+            width:100%;
+        }
+        
+    .pay .time{
+        display: inline-block;
+        margin:10px auto;
+        font-weight:550;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+        color:#0000ff;
+    }
+    .tips {
+        width: 95%;
+        margin: 0px auto;
+        text-align: center
+    }
+    .tips p{
+        font-size: 0.9rem;
+        color:black;
+        height: 2rem;
+        line-height: 2rem;
+    }
+    .pay{
+        min-height: 14.6rem;
+    }
+
+</style>
+
+<div id="purchase" style="display: none;">
+    <div><img src="./images/member.PNG" alt="" style="width: 100%;height: 98%;"></div>
+    <div class="word">
+        <span>开通VIP会员，查看完整视频</span>
+    </div>
+    <div class="type">
+        <ul>
+            <li>
+                <div>
+                    <input type="radio" style="width: 15px;height:15px;line-height: 15px; display: inline-block;"><span class="orange">会员VIP</span>
+                </div>
+            </li>
+            <li>
+                 <div class="p-type">
+                        <span>完整视频</span><span><s class="orange">原价:￥58</s></span>&nbsp;<span class="orange">28</span>
+                </div>
+            </li>
+            <li>
+                <div><input type="radio" style="width: 15px;height:15px;line-height: 15px;  display: inline-block;"><span class="orange">至尊VIP</span></div>
+            </li>
+            <li>
+                <div class="p-type">
+                    <span>所有视频</span><span><s class="orange">原价:￥268</s></span>&nbsp;<span class="orange">28</span>
+                </div>    
+            </li>
+        </ul>
+    </div>
+
+    <div class="pay">
+          <p class="time">优惠剩余时间：4分19秒</p>
+          <a href="" class="wx"><img src="./images/weixin.png" alt=""></a> 
+          <a href="" class="ali"><img src="./images/zhifubao.png" alt=""></a>
+          <div class="tips">
+                <p>注:选择微信跳转支付模式，需要等待30秒</p> 
+                <p>左右才可到达支付页面,期间请勿操作手机</p>
+          </div>
+          
+    </div>
+</div>
+
+
+
 <div>
-<img src="./images/member.PNG" alt="" style="width:100%;">
+    <img src="./images/member.PNG" alt="" style="width:100%;">
 <div>
     <ul style="margin:0.35rem 0">
         <li style="float: left;width: 50%;text-align: center;">
@@ -103,7 +239,7 @@
         </li>
         <li>
             <div>
-                <a href="/">
+                <a href="/" id="buy">
                         <span><i class="fa fa-shopping-cart"></i><span class="text">购买会员</span></span>
                         <span class="icon"><i class="fa fa-angle-right"></i></span>
                 </a>
@@ -150,4 +286,24 @@
 </div>
 </body>
 </html>
+
+
+<script>
+       $('#buy').click(function(){
+        layer.open({
+            type: 1,
+            title : false,
+            skin: 'layui-layer-molv', //加上边框
+            area: ['85%', '85%'], //宽高
+            content: $('#purchase'),
+            id:'test',
+            // closeBtn:1
+    });
+    return false;
+       });
+
+         $(document).click(function(){
+                    layer.close();
+                });
+    </script>
 
