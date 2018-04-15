@@ -24,29 +24,46 @@
 <script>var playn='寂静之地', playp='清晰版';</script>
 </head>
 <body>
-<header class="header clearfix">
-<a href="/" target="_self" class="aGoBack"><i class="moreArrow"></i><span>返回</span></a>
-<a href="javascript:void(0);" target="_self" class="aHeaderSearch top_search_btn"><i class="globalIcon searchIcon"></i><em>全网搜索</em></a>
-<a href="/" target="_self" class="aHeaderFun"><i class="globalIcon indexIcon"></i><span>首页</span></a>
-<section class="searchPop popShow"><section class="searchCon"><span class="sSearchInput">
-<form id="ffsearch" name="ffsearch" method="post" action="/search.php"><input autocomplete="off" autovalue="请输入片名或主演名" class="searchInput" placeholder="请输入片名或主演名" type="search" id="wd" name="wd"></form><i class="iDelete" style="display: none;"></i></span><input class="cancelInput" value="取消" type="button"></section>
+
+<header class="header clearfix" >
+ 
+    <a href="/" target="_self" class="aGoBack"><i class="moreArrow"></i><span>返回</span></a>
+<!-- 搜索框 -->
+<a href="javascript:void(0);" class="aHeaderSearch top_search_btn" style="opacity: 0;">
+<i class="globalIcon searchIcon"></i><em>全网搜索</em></a>
+<a href="./member.html" target="_self" class="aHeaderFun" >
+<i class="fa fa-user" style="color:whitesmoke;font-size: 24px;height: 50px;line-height: 50px;"></i>
+</a>
+
+<p class="headerChannelList" >
+<a class="current" href="/" target="_self">首页</a>
+<a href="/" target="_self">电影</a>
+<a href="/" target="_self">电视剧</a>
+<a href="/" target="_self">综艺</a>
+<a href="/" target="_self">动漫</a>
+</p>
+
+<section class="searchPop popShow" >
+<section class="searchCon">
+    <span class="sSearchInput">
+      <form id="ffsearch" name="ffsearch" method="post" action="/">
+         <input autocomplete="off" autovalue="请输入片名或主演名" class="searchInput" placeholder="请输入片名或主演名" type="search" id="keyword" name="searchword">
+      </form>
+      <i class="iDelete" style="display: none;"></i></span>
+      <input class="cancelInput" value="取消" type="button">
+</section>
 <p class="pLinks">
-
-<a href="/show/23169.html" target="_self" title="唐人街探案2"><span class="sName">唐人街探案2</span><span class="sStyle">电影</span></a>
-
-<a href="/show/25564.html" target="_self" title="乡村爱情10（下）"><span class="sName">乡村爱情10（下）</span><span class="sStyle">电视剧</span></a>
-
-<a href="/show/24543.html" target="_self" title="斗罗大陆第1季"><span class="sName">斗罗大陆第1季</span><span class="sStyle">动漫</span></a>
-
-<a href="/show/23170.html" target="_self" title="捉妖记2"><span class="sName">捉妖记2</span><span class="sStyle">电影</span></a>
-
-<a href="/show/24518.html" target="_self" title="古墓丽影：源起之战"><span class="sName">古墓丽影：源起之战</span><span class="sStyle">电影</span></a>
-
-<a href="/show/25328.html" target="_self" title="独孤天下"><span class="sName">独孤天下</span><span class="sStyle">电视剧</span></a>
-
+    <a href="./play.html" target="_self" title="唐人街探案2"><span class="sName">唐人街探案2</span><span class="sStyle">电影</span></a>
+    <a href="./play.html" target="_self" title="乡村爱情10（下）"><span class="sName">乡村爱情10（下）</span><span class="sStyle">电视剧</span></a>
+    <a href="./play.html" target="_self" title="斗罗大陆第1季"><span class="sName">斗罗大陆第1季</span><span class="sStyle">动漫</span></a>
+    <a href="./play.html" target="_self" title="捉妖记2"><span class="sName">捉妖记2</span><span class="sStyle">电影</span></a>
+    <a href="./play.html" target="_self" title="古墓丽影：源起之战"><span class="sName">古墓丽影：源起之战</span><span class="sStyle">电影</span></a>
+    <a href="./play.html" target="_self" title="西游记女儿国"><span class="sName">西游记女儿国</span><span class="sStyle">电影</span></a>
 </p>
 </section>
+
 </header>
+
 <div class="mask"></div>
 <div class="tbmov-noticetop">
 <script type="text/javascript" language="javascript" src="./js/waptop.js"></script>
@@ -244,7 +261,7 @@
 
   </div>
 
-<div class="nav">
+<div class="nav" style="z-index: 10001">
     <div class="rowAuto menuNavList">
         <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a>
       
