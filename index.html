@@ -289,29 +289,9 @@
 
 </div>
 
+
+
 <!-- <div class="nav">
-            <ul>
-                <li>
-                    <a href="#">
-                    	<span><img src="" height="20"></span>
-                    	<i class="fa fa-home" style="color:white"></i>
-                    	<span>首页</span></a>
-                    	
-                </li>
-               <li style="position:relative;">
-                    <a href="#"><span><img src="" height="20"></span><span>购买记录</span></a>
-                </li>
-                <li>
-                    <a href="#"><span><i class="fa fa-play-circle" style="color:white"></i></span><span>观看记录</span></a>
-                </li>
-                <li>
-
-                    <a href="#"><span><i class="fa fa-user" style="color:white"></i></span><span>个人中心</span></a>
-                </li>
-            </ul>
-</div> -->
-
-<div class="nav">
     <div class="rowAuto menuNavList">
         <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a>
       
@@ -323,7 +303,42 @@
       
       <a href="/" target="_self"><i class="menuNavIcon zbIcon"></i><span class="sTit">直播</span></a>
       </div>
-</div>
+</div> -->
+
+<style>
+        .swiper-slide{
+            background: #007bff!important;
+        }
+    </style>
+    <div class="nav">
+        <div class="rowAuto menuNavList">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">综艺</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon zyIcon"></i><span class="sTit">动漫</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon zbIcon"></i><span class="sTit">直播</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">综艺</span></a></div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+            autoHeight: true, //高度随内容变化
+            slidesPerView: 4,
+            spaceBetween: 10,
+            slidesPerGroup: 4,
+             loop: true,
+             loopFillGroupWithBlank: true,
+      
+        });
+      </script>
 
 <div class="footer" style="display: none">
 	<div class="fBox">

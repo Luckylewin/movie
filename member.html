@@ -276,7 +276,7 @@
 </div>
 
 
-<div class="nav">
+<!-- <div class="nav">
     <div class="rowAuto menuNavList">
         <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a>
       
@@ -288,7 +288,42 @@
       
       <a href="/" target="_self"><i class="menuNavIcon zbIcon"></i><span class="sTit">直播</span></a>
       </div>
+</div> -->
+<style>
+    .swiper-slide{
+        background: #007bff!important;
+    }
+</style>
+<div class="nav">
+    <div class="rowAuto menuNavList">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">综艺</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon zyIcon"></i><span class="sTit">动漫</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon zbIcon"></i><span class="sTit">直播</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">综艺</span></a></div>
+            
+            </div>
+        </div>
+    </div>
 </div>
+  <link rel="stylesheet" href="./js/swiper-4.2.2/dist/css/swiper.min.css">
+<script src="./js/swiper-4.2.2/dist/js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+        autoHeight: true, //高度随内容变化
+        slidesPerView: 4,
+        spaceBetween: 10,
+        slidesPerGroup: 4,
+         loop: true,
+         loopFillGroupWithBlank: true,
+  
+    });
+  </script>
 
 
 <script type="text/javascript" src="./js/zepto.min.js"></script>
