@@ -84,10 +84,15 @@
 	<div class="sf-alert-remove" onclick="try { $(this.parentNode).slideUp(1); } catch(e) { this.parentNode.style.display = &#39;none&#39;; };">	
 	</div>如跳到其他网站请反馈QQ627920 喜欢本站的亲 请大家收藏和分享给好友..
 </div> -->
-
+<style>
+    .swiper-p1 {
+        text-align: center;
+        margin-top: -0.3rem;
+    }
+</style>
 <div>
 	  <!-- Swiper -->
-  <div class="swiper-container">
+  <div class="swiper-container-one">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
           <a href="./play.html"> <img src="./images/banner.jpg" style="width: 100%;height: 105%;"></a>
@@ -102,7 +107,7 @@
             <a href="./play.html"><img src="./images/banner3.jpg" style="width: 100%;height: 105%;"></a>
         </div>
     </div>
-    
+    <div class="swiper-p1"></div>
   </div>
 
   <!-- Swiper JS -->
@@ -110,7 +115,7 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper-container-one', {
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
@@ -118,10 +123,9 @@
         disableOnInteraction: false,
       },
       pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+        el: '.swiper-p1',
      
+      },
       effect: 'fade',
 
     });
@@ -306,7 +310,7 @@
 </div> -->
 
 <style>
-        .swiper-slide{
+       .nav .swiper-slide{
             background: #007bff!important;
         }
     </style>
