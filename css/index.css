@@ -54,7 +54,8 @@ body .fn-hide{display:none}
 .wrapper{min-height: 100%; position: relative; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
 .main {padding-left:2%;padding-right:2%;}
 .top{ margin-top:0.5rem;}
-.all_tab{box-shadow:0 2px 2px 0 rgba(0,0,0,0.05);background:#fff; padding:0.333rem 0.333rem 0 0.333rem}
+/* padding:0.333rem 0.333rem 0 0.333rem */
+.all_tab{box-shadow:0 2px 2px 0 rgba(0,0,0,0.05);background:#fff; }
 .all_tab_new{box-shadow:0 2px 2px 0 rgba(0,0,0,0.05);background:#fff; padding:0.625rem 0.625rem 0 0.625rem}
 /*background-color:#3097fd;*/
 .header {background-color:#007bff;height: 3.3rem;line-height: 3.3rem;display: -webkit-box;display: -moz-box;display: -ms-flexbox;display: -webkit-flex;display: flex;z-index: 600;position: fixed;top: 0;left: 0;width: 100%;}
