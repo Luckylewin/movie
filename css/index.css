@@ -908,6 +908,7 @@ display: inline-block;border-style: solid;overflow: hidden;vertical-align: middl
     bottom: -3px;
     border-radius: 6px;
     z-index: 1000;
+    max-height: 200px;
 }
 
 .nav ul {

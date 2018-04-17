@@ -400,9 +400,9 @@
     </div>
 
     <div class="pay">
-          <p class="time" id="timer">优惠剩余时间：4分19秒</p>
-          <a href="" class="wx"><img src="./images/weixin.png" alt=""></a> 
-          <a href="" class="ali"><img src="./images/zhifubao.png" alt=""></a>
+          <p class="time" id="timer">优惠剩余时间：5分0秒</p>
+          <a href="javascript:void(0)" class="wx onlinepay"><img src="./images/weixin.png" alt=""></a> 
+          <a href="javascript:void(0)" class="ali onlinepay"><img src="./images/zhifubao.png" alt=""></a>
           <div  onclick="close()" id="cancel" style="height: 3rem;line-height: 3rem;display: block;width: 97%;font-size: 1rem;letter-spacing: 2px;margin:3px auto;text-align: center;background: #ccc;border-radius:30px;color:#fff;">返回</div>
           <div class="tips">
                 <p>注:选择微信跳转支付模式，需要等待30秒</p> 
@@ -435,6 +435,9 @@
   });
 </script>
 <script>
+    var maxtime = 300; //一个小时，按秒计算，自己调整!  
+    var lock = true;
+
     var videoObject = {
       container: '#video', //容器的ID或className
       variable: 'player',//播放函数名称
@@ -475,6 +478,7 @@
       if(t >= 10 && !loginOrNo) { //如果播放时间大于1，则又没有登录，则弹出登录/注册层
         player.videoPause();
         if(!loginShow && !elementLogin) {
+                  if (lock) timer = setInterval("CountDown()", 1000);
                   showCart();
                   player.quitFullScreen()
                   loginShow = true;
@@ -495,8 +499,27 @@
                   // closeBtn:1
       });
     }
+
+    function CountDown() {
+              if (maxtime >= 0) {
+                  minutes = Math.floor(maxtime / 60);
+                  seconds = Math.floor(maxtime % 60);
+                  msg = "优惠剩余时间："+ minutes + "分" + seconds + "秒";
+                  document.all["timer"].innerHTML = msg;
+                  --maxtime;
+                  lock = false;
+              } else {
+                  lock = true;
+                  clearInterval(timer);
+              }
+    }
+    
      $("body").on("click", "#cancel",function(){
             layer.closeAll();
             player.changeControlBarShow(false);
+     });
+
+     $("body").on("click", '.onlinepay', function() {
+          layer.tips('暂时只提供演示', '.onlinepay',{tips: [3, '#d64f4f']});
      });
 </script>  
