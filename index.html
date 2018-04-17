@@ -21,12 +21,21 @@
 <script type="text/javascript" src="./js/home.js"></script>
 <script src="./js/pc.js"></script>
 </head>
+<style>
+.swiper-p1 {
+text-align: center;
+margin-top: -0.3rem;
+}
+.nav .swiper-slide{
+    background: #007bff!important;
+}
+</style>
 <body>
 
 
 <header class="header clearfix" >
  
-        <a href="/" target="_self" class="logo"></a>
+<a href="/" target="_self" class="logo"></a>
 <!-- 搜索框 -->
 <a href="javascript:void(0);" class="aHeaderSearch top_search_btn" style="opacity: 0;">
   <i class="globalIcon searchIcon"></i><em>全网搜索</em></a>
@@ -63,33 +72,8 @@
 
 </header>
 <div class="mask"></div>
-<div class="tbmov-noticetop">
+<div class="tbmov-noticetop"></div>
 
-</div>
-
-<!-- <div class="rowAuto menuNavList">
-
-  <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a>
-
-  <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a>
-
-  <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">综艺</span></a>
-
-  <a href="/" target="_self"><i class="menuNavIcon zyIcon"></i><span class="sTit">动漫</span></a>
-
-<a href="/" target="_self"><i class="menuNavIcon zbIcon"></i><span class="sTit">直播</span></a>
-</div> -->
-
-<!-- <div class="tbmov-notice">
-	<div class="sf-alert-remove" onclick="try { $(this.parentNode).slideUp(1); } catch(e) { this.parentNode.style.display = &#39;none&#39;; };">	
-	</div>如跳到其他网站请反馈QQ627920 喜欢本站的亲 请大家收藏和分享给好友..
-</div> -->
-<style>
-    .swiper-p1 {
-        text-align: center;
-        margin-top: -0.3rem;
-    }
-</style>
 <div>
 	  <!-- Swiper -->
   <div class="swiper-container-one">
@@ -110,27 +94,6 @@
     <div class="swiper-p1"></div>
   </div>
 
-  <!-- Swiper JS -->
-  <script src="./js/swiper-4.2.2/dist/js/swiper.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container-one', {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      loop: true,
-      pagination: {
-        el: '.swiper-p1',
-     
-      },
-      effect: 'fade',
-
-    });
-  </script>
 </div>
 
 
@@ -294,56 +257,23 @@
 
 </div>
 
-
-
-<!-- <div class="nav">
-    <div class="rowAuto menuNavList">
-        <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a>
-      
-        <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a>
-      
-        <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">综艺</span></a>
-      
-        <a href="/" target="_self"><i class="menuNavIcon zyIcon"></i><span class="sTit">动漫</span></a>
-      
-      <a href="/" target="_self"><i class="menuNavIcon zbIcon"></i><span class="sTit">直播</span></a>
-      </div>
-</div> -->
-
-<style>
-       .nav .swiper-slide{
-            background: #007bff!important;
-        }
-    </style>
-    <div class="nav">
+<div class="nav">
         <div class="rowAuto menuNavList">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                 <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a></div>
                 <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a></div>
-                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">综艺</span></a></div>
-                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon zyIcon"></i><span class="sTit">动漫</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon zyIcon"></i><span class="sTit">综艺</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">动漫</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon mnIcon"></i><span class="sTit">美女</span></a></div>
                 <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon zbIcon"></i><span class="sTit">直播</span></a></div>
-                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a></div>
-                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a></div>
-                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">综艺</span></a></div>
-                
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dspIcon"></i><span class="sTit">短视频</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon ztIcon"></i><span class="sTit">专题</span></a></div>
                 </div>
             </div>
         </div>
-    </div>
+</div>
 
-      <script>
-        var swiper = new Swiper('.swiper-container', {
-            autoHeight: true, //高度随内容变化
-            slidesPerView: 4,
-            spaceBetween: 10,
-            slidesPerGroup: 4,
-             loop: true,
-             loopFillGroupWithBlank: true,
-      
-        });
-      </script>
 
 <div class="footer" style="display: none">
 	<div class="fBox">
@@ -353,8 +283,6 @@
 	本网站所有内容均系采集于互联网，若本站收录的节目无意侵犯了贵司版权，请给邮箱xuanday#qq.com来信，我们会及时处理！
 	</div>
 </div>
-
-
 
 <section class="fixedBtnList" style="">
 	<a class="gotoTop" target="_self" href="javascript:scroll(0,0)"></a>
@@ -366,3 +294,36 @@
 </div>
 </body>
 </html>
+
+<!-- Swiper JS -->
+<script src="./js/swiper-4.2.2/dist/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+      var swiper = new Swiper('.swiper-container', {
+          autoHeight: true, //高度随内容变化
+          slidesPerView: 4,
+          spaceBetween: 10,
+          slidesPerGroup: 4,
+           loop: true,
+           loopFillGroupWithBlank: true,
+    
+      });
+    </script>
+<script>
+  var swiper = new Swiper('.swiper-container-one', {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    pagination: {
+      el: '.swiper-p1',
+   
+    },
+    effect: 'fade',
+
+  });
+</script>

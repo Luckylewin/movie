@@ -15,23 +15,16 @@
 <link href="./css/index.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="./js/swiper-4.2.2/dist/css/swiper.min.css">
 <link href="./css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./js/swiper-4.2.2/dist/css/swiper.min.css">
 <script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="./js/jquery-lazyload.js"></script>
 <script type="text/javascript" src="./js/jquery.base.js"></script>
-<script type="text/javascript" src="./js/home.js"></script>
-<script type="text/javascript" src="./js/layer/layer.js"></script>
-<script src="./js/pc.js"></script>
-<script>
-        window.onload=function(){  
-                    if(document.documentElement.scrollHeight <= document.documentElement.clientHeight) {  
-                        bodyTag = document.getElementsByTagName('body')[0];  
-                        bodyTag.style.height = document.documentElement.clientWidth / screen.width * screen.height + 'px';  
-                    }  
-                    setTimeout(function() {  
-                        window.scrollTo(0, 1)  
-                    }, 0);  
-                };  
-    </script>
+
+<style>
+        .swiper-slide{
+            background: #007bff!important;
+        }
+    </style>
 </head>
 <body style="position: relative">
 
@@ -46,12 +39,6 @@
 <!-- 搜索框 -->
 </header>
 
-<!-- 
-<div style="position: absolute;left: 0;top:0px;background:black;width: 100%;height:100%; opacity: 0.5;z-index: 10001">
-       <div style="position: absolute;left: 0;top:0px;background: #fff;width: 80%;height:80%; z-index: 10002">
-
-       </div>
-</div> -->
 <style>
         .layui-layer-page{
             border-radius: 30px;
@@ -275,43 +262,23 @@
     </ul>
 </div>
 
-
-<!-- <div class="nav">
-    <div class="rowAuto menuNavList">
-        <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a>
-      
-        <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a>
-      
-        <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">综艺</span></a>
-      
-        <a href="/" target="_self"><i class="menuNavIcon zyIcon"></i><span class="sTit">动漫</span></a>
-      
-      <a href="/" target="_self"><i class="menuNavIcon zbIcon"></i><span class="sTit">直播</span></a>
-      </div>
-</div> -->
-<style>
-    .swiper-slide{
-        background: #007bff!important;
-    }
-</style>
 <div class="nav">
-    <div class="rowAuto menuNavList">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a></div>
-            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a></div>
-            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">综艺</span></a></div>
-            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon zyIcon"></i><span class="sTit">动漫</span></a></div>
-            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon zbIcon"></i><span class="sTit">直播</span></a></div>
-            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a></div>
-            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a></div>
-            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">综艺</span></a></div>
-            
+        <div class="rowAuto menuNavList">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon zyIcon"></i><span class="sTit">综艺</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">动漫</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon mnIcon"></i><span class="sTit">美女</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon zbIcon"></i><span class="sTit">直播</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dspIcon"></i><span class="sTit">短视频</span></a></div>
+                <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon ztIcon"></i><span class="sTit">专题</span></a></div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-  <link rel="stylesheet" href="./js/swiper-4.2.2/dist/css/swiper.min.css">
+
 <script src="./js/swiper-4.2.2/dist/js/swiper.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
@@ -324,16 +291,27 @@
   
     });
   </script>
-
-
-<script type="text/javascript" src="./js/zepto.min.js"></script>
-<script type="text/javascript" src="./js/iscroll.js"></script>
-<script type="text/javascript" src="./js/common.min.js"></script>
 </div>
 </body>
 </html>
 
-
+<script type="text/javascript" src="./js/zepto.min.js"></script>
+<script type="text/javascript" src="./js/iscroll.js"></script>
+<script type="text/javascript" src="./js/common.min.js"></script>
+<script type="text/javascript" src="./js/home.js"></script>
+<script type="text/javascript" src="./js/layer/layer.js"></script>
+<script src="./js/pc.js"></script>
+<script>
+        window.onload=function(){  
+                    if(document.documentElement.scrollHeight <= document.documentElement.clientHeight) {  
+                        bodyTag = document.getElementsByTagName('body')[0];  
+                        bodyTag.style.height = document.documentElement.clientWidth / screen.width * screen.height + 'px';  
+                    }  
+                    setTimeout(function() {  
+                        window.scrollTo(0, 1)  
+                    }, 0);  
+                };  
+</script>
 <script>
        $('#help').click(function(){
             layer.tips('敬请期待', '#help',{tips: [3, '#c00']});

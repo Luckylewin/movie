@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport"/>
-<title>寂静之地清晰版-电影-高清完整版在线观看-超级影院</title>
+<title>电影-高清完整版在线观看-超级影院</title>
 <meta name="title" content="寂静之地清晰版-电影-高清完整版在线观看-没事影院" />
 <meta name="Keywords" content="寂静之地清晰版高清视频，寂静之地清晰版电影在线观看，寂静之地清晰版主要剧情" />
 <meta name="description" content="《寂静之地》清晰版，电影高清完整版在线观看。寂静之地是由约翰·卡拉辛斯基 导演，由艾米莉·布朗特 约翰·卡拉辛斯基 诺亚·尤佩 米丽桑特·西蒙德 凯德·伍德沃德 里昂·拉瑟姆主演的电影。影片剧情简介：一个大规模的入侵行动发生，让地球几乎全灭，幸存的这一家人过着安静无声的生活，一发出声音就会被怪物抓走。《寂静之地》中的家庭必须时时保持安静，这一家人必须搞清楚哪些声音可以发出，哪些不行。父亲铺了沙..。" />
@@ -17,11 +17,20 @@
 <script type="text/javascript" src="./js/jquery-lazyload.js"></script>
 <script type="text/javascript" src="./js/jquery.base.js"></script>
 <script type="text/javascript" src="./js/home.js"></script>
+<link rel="stylesheet" href="./js/swiper-4.2.2/dist/css/swiper.min.css">
 <link href="./css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<script src="./js/pc.js"></script>
-<script>var sitePath='';</script>
 
-<script>var playn='寂静之地', playp='清晰版';</script>
+<style>
+    .swiper-slide{
+        background: #007bff!important;
+    }
+    video::-webkit-media-controls-enclosure {  
+        overflow:hidden;  
+    }  
+    video::-webkit-media-controls-panel {  
+        width: calc(100% + 30px);  
+    }  
+</style>
 </head>
 <body>
 
@@ -71,31 +80,13 @@
 <div class="list_nav" style="border:none">
 <div class="main fn-left"><span>您所观看的是：</span><a href="/type/1.html" title="电影" target="_self">电影</a><em><i class="iconfont"></i></em><a class="current" href="/show/25999.html" title="寂静之地">我的梦</a><em><i class="iconfont"></i></em>清晰版</div></div>
 <div class="playerbox">
-
-<script type="text/javascript" src="./js/ckplayer/ckplayer/ckplayer.js"></script>
     <div id="video" style="width: 100%;"></div>
-
-    <script type="text/javascript">
-      var videoObject = {
-        container: '#video', //容器的ID或className
-        variable: 'player',//播放函数名称
-        poster:'material/poster.jpg',//封面图片
-        //flashplayer:true,
-        video: [//视频地址列表形式
-          ['http://img.ksbbs.com/asset/Mon_1703/eb048d7839442d0.mp4', 'video/mp4', '高清', 10],
-        ]
-      };
-      var player = new ckplayer(videoObject);
-    </script>  
-
 </div>
-
-
 <div>
   
-  <div style="border:3px solid #d64f4f;border-radius: 50px;width: 80%;height: 45px;margin:10px auto;background: #fefe8c;font-size: 16px;line-height:45px;; text-align:center">
-    <b style="font-weight: 900;color: #000">非会员只能试看，<a href="#" style="color:#d64f4f;font-weight: 900;">成为会员 </a>观看完整版</b>
-  </div>
+    <div style="border:3px solid #d64f4f;border-radius: 50px;width: 80%;height: 45px;margin:10px auto;background: #fefe8c;font-size: 16px;line-height:45px;; text-align:center">
+      <b style="font-weight: 900;color: #000">非会员只能试看，<a href="#" style="color:#d64f4f;font-weight: 900;">成为会员 </a>观看完整版</b>
+    </div>
 
 </div>
 
@@ -161,9 +152,9 @@
 <div class="main vod-botx-title">
 <ul>
     <li id="latest1" onclick="setTab('latest',1,3);" class="current">精品</li>
-<!-- <li id="latest1" onclick="setTab('latest',1,3);" class="current">猜你喜欢</li>
-<li id="latest2" onclick="setTab('latest',2,3);">同演员</li>
-<li id="latest3" onclick="setTab('latest',3,3);">同导演</li> -->
+    <!-- <li id="latest1" onclick="setTab('latest',1,3);" class="current">猜你喜欢</li>
+    <li id="latest2" onclick="setTab('latest',2,3);">同演员</li>
+    <li id="latest3" onclick="setTab('latest',3,3);">同导演</li> -->
 </ul>
 </div>
 <div id="resize_list">
@@ -257,31 +248,255 @@
 </div>
 
 
-<div style="height: 50px;width:100%;margin-bottom: 30px;">
+<div style="height: 50px;width:100%;margin-bottom: 40px;">
 
-  </div>
-
-<div class="nav" style="z-index: 10001">
-    <div class="rowAuto menuNavList">
-        <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a>
-      
-        <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a>
-      
-        <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">综艺</span></a>
-      
-        <a href="/" target="_self"><i class="menuNavIcon zyIcon"></i><span class="sTit">动漫</span></a>
-      
-      <a href="/" target="_self"><i class="menuNavIcon zbIcon"></i><span class="sTit">直播</span></a>
-      </div>
 </div>
 
-<section class="fixedBtnList" style="">
+<div class="nav">
+    <div class="rowAuto menuNavList">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dyIcon"></i><span class="sTit">电影</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dsjIcon"></i><span class="sTit">电视剧</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon zyIcon"></i><span class="sTit">综艺</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dmIcon"></i><span class="sTit">动漫</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon mnIcon"></i><span class="sTit">美女</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon zbIcon"></i><span class="sTit">直播</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon dspIcon"></i><span class="sTit">短视频</span></a></div>
+            <div class="swiper-slide">  <a href="/" target="_self"><i class="menuNavIcon ztIcon"></i><span class="sTit">专题</span></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+<section class="fixedBtnList" >
 	<a onclick="_dct_('mys_bottom_top');" class="gotoTop" target="_self" href="javascript:scroll(0,0)"></a>
 </section>
+
+<style>
+    .layui-layer-page{
+        border-radius: 30px;
+        overflow: hidden;
+        background: #f4f4f4;
+    }
+
+    #purchase .word
+    {
+        background: #f5f5f5;
+        color:#ff6100;
+        font-size: 1rem;
+        height: 35px;
+        line-height: 35px;
+        width: 100%;
+        text-align: center;
+        margin-top: -6px;
+    }
+    #purchase .word span {
+        font-weight: 560;
+    }
+  
+    .red{
+        color:red;
+        font-weight: 650; 
+        font-size: 1rem;
+    }
+   .p-type s{
+        font-size: 1.3rem;
+    }
+    .orange {
+        color:#ff6100;
+        font-size: 1rem;
+        font-weight: 650; 
+    }
+    #purchase .type ul {
+        width: 95%;
+        margin:5px auto;
+    }
+   
+    #purchase .type ul li {
+        width: 100%;
+        height: 1.6rem;
+        line-height: 1.6rem;
+        display: block;
+    }
+    #purchase .type ul li span:first-child {
+        margin-right: 20px;
+        font-size: 1rem;
+    }
+    .p-type{
+        text-indent: 20px;
+    }
+    .p-type span:first-child {
+        color:gray;
+    }
+    .type{
+        background: #fff;
+        padding: 10px;
+    }
+    .pay {
+        background: #f4f4f4;
+        width: 100%;
+
+    }
+    .wx ,.ali{
+        display: block; 
+    }
+    .wx img ,.ali img{
+        width:100%;
+    }
+    
+.pay .time{
+    display: inline-block;
+    margin:10px auto;
+    font-weight:550;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color:#0000ff;
+}
+.tips {
+    width: 95%;
+    margin: 0px auto;
+    text-align: center
+}
+.tips p{
+    font-size: 0.9rem;
+    color:black;
+    height: 2rem;
+    line-height: 2rem;
+}
+.pay{
+    min-height: 14.6rem;
+}
+
+</style>
+
+<div id="purchase" style="display: none;">
+    <div><img src="./images/member.PNG" alt="" style="width: 100%;height: 98%;margin-top: -2.8rem"></div>
+    <div class="word">
+        <span>开通VIP会员，查看完整视频</span>
+    </div>
+    <div class="type">
+        <ul>
+            <li>
+                <div>
+                    <input type="radio" style="width: 15px;height:15px;line-height: 15px; display: inline-block;"><span class="orange">会员VIP</span>
+                </div>
+            </li>
+            <li>
+                 <div class="p-type">
+                        <span>完整视频</span><span><s class="red">原价:￥58</s></span>&nbsp;<span class="red">￥28</span>
+                </div>
+            </li>
+            <li>
+                <div><input type="radio" style="width: 15px;height:15px;line-height: 15px;  display: inline-block;"><span class="orange">至尊VIP</span></div>
+            </li>
+            <li>
+                <div class="p-type">
+                    <span>所有视频</span><span><s class="red">原价:￥268</s></span>&nbsp;<span class="red">￥138</span>
+                </div>    
+            </li>
+        </ul>
+    </div>
+
+    <div class="pay">
+          <p class="time" id="timer">优惠剩余时间：4分19秒</p>
+          <a href="" class="wx"><img src="./images/weixin.png" alt=""></a> 
+          <a href="" class="ali"><img src="./images/zhifubao.png" alt=""></a>
+          <div  onclick="close()" id="cancel" style="height: 3rem;line-height: 3rem;display: block;width: 97%;font-size: 1rem;letter-spacing: 2px;margin:3px auto;text-align: center;background: #ccc;border-radius:30px;color:#fff;">返回</div>
+          <div class="tips">
+                <p>注:选择微信跳转支付模式，需要等待30秒</p> 
+                <p>左右才可到达支付页面,期间请勿操作手机</p>
+          </div>
+          
+    </div>
+</div>
+
+
+</body>
+</html>
 
 <script type="text/javascript" src="./js/zepto.min.js"></script>
 <script type="text/javascript" src="./js/iscroll.js"></script>
 <script type="text/javascript" src="./js/common.min.js"></script>
+<script src="./js/pc.js"></script>
+<script src="./js/layer/layer.js"></script>
+<script src="./js/ckplayer/ckplayer/ckplayer.js"></script>
+<script src="./js/swiper-4.2.2/dist/js/swiper.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+      autoHeight: true, //高度随内容变化
+      slidesPerView: 4,
+      spaceBetween: 10,
+      slidesPerGroup: 4,
+       loop: true,
+       loopFillGroupWithBlank: true,
 
-</body>
-</html>
+  });
+</script>
+<script>
+    var videoObject = {
+      container: '#video', //容器的ID或className
+      variable: 'player',//播放函数名称
+      poster:'/images/poster.jpg',//封面图片
+      loaded: 'loadedHandler',
+      //flashplayer:true,
+      video: [//视频地址列表形式
+        ['http://img.ksbbs.com/asset/Mon_1703/eb048d7839442d0.mp4', 'video/mp4', '高清', 10],
+      ]
+    };
+    var elementLogin = null; //是否存在提示层
+	  var loginOrNo = false; //是否已登录，默认是没有登录
+	  var loginShow = false; //提示层是否是显示状态
+    var player = new ckplayer(videoObject);
+    
+    function loadedHandler() { //播放器加载后会调用该函数
+        player.addListener('time', timeHandler); //监听播放时间,addListener是监听函数，需要传递二个参数，'time'是监听属性，这里是监听时间，timeHandler是监听接受的函数
+        player.addListener('play', playHandler); //监听播放状态
+        player.addListener('full', fullHandler); //监听全屏切换
+	  }
+
+    function playHandler() { //监听播放状态
+		  if (loginShow) {
+          showCart();
+          player.videoPause();
+      }
+    }
+
+    function fullHandler(b) { //监听全屏切换
+      if(loginShow && elementLogin) {
+        player.deleteElement(elementLogin);
+        elementLogin = null;
+        window.setTimeout('showLogin()', 200);
+      }
+  }
+
+    function timeHandler(t) { //监听播放时间
+      if(t >= 10 && !loginOrNo) { //如果播放时间大于1，则又没有登录，则弹出登录/注册层
+        player.videoPause();
+        if(!loginShow && !elementLogin) {
+                  showCart();
+                  player.quitFullScreen()
+                  loginShow = true;
+        }
+      }
+    }
+    
+    function showCart()
+    {
+      layer.open({
+                  type: 1,
+                  title : false,
+                  skin: 'layui-layer-molv', //加上边框
+                  area: ['86%', '89%'], //宽高
+                  content: $('#purchase'),
+                  id:'test',
+                  offset: '40px'
+                  // closeBtn:1
+      });
+    }
+     $("body").on("click", "#cancel",function(){
+            layer.closeAll();
+            player.changeControlBarShow(false);
+     });
+</script>  

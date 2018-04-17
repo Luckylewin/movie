@@ -156,15 +156,25 @@ body .fn-hide{display:none}
 .menuNavList a { float: left; width: 20%; text-align: center; padding: 0.5rem 0; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; }
 .menuNavList a .menuNavIcon { width: 2.67rem; height: 2.67rem; margin: 0 auto; display: block; }
 .menuNavList a .menuNavIcon.tjIcon{background-position:-13.33rem 0}
+/* 电影 */
 .menuNavList a .menuNavIcon.dyIcon { background-position: -2.67rem 0; }
+/* 电视剧 */
 .menuNavList a .menuNavIcon.dsjIcon { background-position: -5.33rem 0; }
+/* 综艺 */
 .menuNavList a .menuNavIcon.zyIcon { background-position: -8rem 0; }
+/* 动漫 */
 .menuNavList a .menuNavIcon.dmIcon { background-position: 0 0; }
+/* 直播 */
 .menuNavList a .menuNavIcon.zbIcon { background-position: -10.67rem 0; }
+/*短视频*/
 .menuNavList a .menuNavIcon.dspIcon { background-position: 0 -2.67rem; }
+/*专题*/
 .menuNavList a .menuNavIcon.ztIcon { background-position: -10.67rem -2.67rem; }
+/* 报道 */
 .menuNavList a .menuNavIcon.bdIcon { background-position: -8rem -2.67rem; }
+/* 小品 */
 .menuNavList a .menuNavIcon.xpIcon { background-position: -5.33rem -2.67rem; }
+/* 美女 */
 .menuNavList a .menuNavIcon.mnIcon { background-position: -2.67rem -2.67rem; }
 .menuNavList a .sTit { display: block; font-size: 0.93rem; }
 
@@ -897,6 +907,7 @@ display: inline-block;border-style: solid;overflow: hidden;vertical-align: middl
     left: 0;
     bottom: -3px;
     border-radius: 6px;
+    z-index: 1000;
 }
 
 .nav ul {
