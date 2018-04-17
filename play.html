@@ -482,12 +482,14 @@
                   showCart();
                   player.quitFullScreen()
                   loginShow = true;
+          
         }
       }
     }
     
     function showCart()
     {
+      $('#video').css('display','none');
       layer.open({
                   type: 1,
                   title : false,
@@ -516,6 +518,7 @@
     
      $("body").on("click", "#cancel",function(){
             layer.closeAll();
+            $('#video').css('display','block');
             player.changeControlBarShow(false);
      });
 
