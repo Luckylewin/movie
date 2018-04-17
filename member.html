@@ -21,6 +21,9 @@
 <script type="text/javascript" src="./js/jquery.base.js"></script>
 
 <style>
+        .menu .swiper-wrapper{
+            width: 20%;
+        }  
         .swiper-slide{
             background: #007bff!important;
         }
@@ -262,7 +265,7 @@
     </ul>
 </div>
 
-<div class="nav">
+<div class="nav menu">
         <div class="rowAuto menuNavList">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -283,9 +286,8 @@
   <script>
     var swiper = new Swiper('.swiper-container', {
         autoHeight: true, //高度随内容变化
-        slidesPerView: 4,
-        spaceBetween: 10,
-        slidesPerGroup: 4,
+        slidesPerView: 5,
+        slidesPerGroup: 5,
          loop: true,
          loopFillGroupWithBlank: true,
   
